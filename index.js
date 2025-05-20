@@ -10,8 +10,8 @@ app
   .use(cors())
   .use(express.json())
   .use(express.urlencoded({ extended: true }))
-  .use('/', require('./routes'))
-  .use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
+  .use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument))
+  .use('/', require('./routes'));
 
 const db = require('./models');
 db.mongoose
