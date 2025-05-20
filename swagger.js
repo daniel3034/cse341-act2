@@ -6,7 +6,7 @@ const doc = {
     description: 'Temple API for documenting routes',
   },
   host: 'localhost:8080',
-  schemes: ['http'],
+  schemes: ['http', 'https'],
 };
 
 const outputFile = './swagger.json';

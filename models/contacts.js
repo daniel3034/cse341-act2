@@ -7,7 +7,7 @@ module.exports = (mongoose) => {
                 lastName: { type: String, required: true },
                 email: { type: String, required: true },
                 favoriteColor: { type: String, required: true },
-                birthday: { type: string, required: true },
+                birthday: { type: String, required: true },
             },
             { timestamps: true }
         )
