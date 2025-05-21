@@ -5,11 +5,11 @@ const doc = {
     title: 'Contacts API',
     description: 'Contacts API for documenting routes',
   },
-  host: 'https://cse341-act1.onrender.com',
+  host: 'localhost:8080',
   schemes: ['http', 'https'],
 };
 
 const outputFile = './swagger.json';
-const endpointsFiles = ['./routes/temple.js', './routes/contacts.js'];
+const endpointsFiles = ['./routes/index.js'];
 
 swaggerAutogen(outputFile, endpointsFiles, doc);

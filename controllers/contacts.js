@@ -35,7 +35,7 @@ exports.update = (req, res) => {
   Contact.findByIdAndUpdate(req.params.id, req.body, { new: true, runValidators: true })
     .then(data => {
       if (!data) return res.status(404).send({ message: 'Contact not found' });
-      res.status(204).send();
+      res.status(200).send(data);
     })
     .catch(err => res.status(500).send({ message: err.message }));
 };
