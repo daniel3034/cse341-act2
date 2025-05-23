@@ -48,11 +48,15 @@ router.get('/:id', contacts.findOne);
  *           schema:
  *             type: object
  *             properties:
- *               name:
+ *               firstName:
+ *                 type: string
+ *               lastName:
  *                 type: string
  *               email:
  *                 type: string
- *               phone:
+ *               favoriteColor:
+ *                 type: string
+ *               birthday:
  *                 type: string
  *     responses:
  *       201:
@@ -80,11 +84,15 @@ router.post('/', contacts.create);
  *           schema:
  *             type: object
  *             properties:
- *               name:
+ *               firstName:
+ *                 type: string
+ *               lastName:
  *                 type: string
  *               email:
  *                 type: string
- *               phone:
+ *               favoriteColor:
+ *                 type: string
+ *               birthday:
  *                 type: string
  *     responses:
  *       200:
