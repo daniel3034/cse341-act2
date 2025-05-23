@@ -7,7 +7,7 @@
   },
   "servers": [
     {
-      "url": "https://cse341-act1.onrender.com/"
+      "url": "http://localhost:8080/"
     }
   ],
   "paths": {
